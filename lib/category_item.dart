@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import './models/category.dart';
-
 class CategoryItem extends StatelessWidget {
   final String title;
   final Color color;
@@ -19,7 +17,10 @@ class CategoryItem extends StatelessWidget {
             end: Alignment.bottomRight),
         borderRadius: BorderRadius.circular(15),
       ),
-      child: Text(title),
+      child: Text(
+        title,
+        style: Theme.of(context).textTheme.titleMedium,
+      ),
     );
   }
 }

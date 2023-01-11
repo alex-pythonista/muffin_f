@@ -11,7 +11,16 @@ class MuffinApp extends StatelessWidget {
     return MaterialApp(
       title: 'Muffin F',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.pink,
+        ).copyWith(secondary: Colors.amber),
+        canvasColor: const Color.fromRGBO(255, 254, 229, 1),
+        fontFamily: 'Consolas',
+        textTheme: const TextTheme(
+          headline1: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
+          bodyText1: TextStyle(fontSize: 20.0, fontFamily: 'Consolas'),
+          // ),
+        ),
       ),
       home: const CategoriesScreen(),
     );
