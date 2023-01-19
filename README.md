@@ -1,6 +1,6 @@
 # muffin_f
 
-A new Flutter project.
+A practice project.
 
 ## Getting Started
 
