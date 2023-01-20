@@ -8,12 +8,10 @@ class CategoryItem extends StatelessWidget {
 
   CategoryItem(this.title, this.color);
 
-  void selectCategory(BuildContext ctx) {
-    Navigator.of(ctx).push(
+  void selectCategory(BuildContext context) {
+    Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => {
-          return CategoryMealsScreen();
-        },
+        builder: (_) => CategoryMealsScreen(),
       ),
     );
   }
