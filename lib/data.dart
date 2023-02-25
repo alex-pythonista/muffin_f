@@ -10,7 +10,7 @@ List<Meal> DUMMY_MEALS = [
     categories: ['c1'],
     title: 'Spaghetti with Tomato Sauce',
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/11/21/51/spaghetti-3538457_960_720.jpg',
+        'https://www.giallozafferano.com/images/228-22832/spaghetti-with-tomato-sauce_1200x800.jpg',
     ingridients: ['Spaghetti', 'Tomatoes', 'Salt', 'Olive Oil'],
     steps: [
       'Boil water in a large pot and add salt.',
@@ -33,7 +33,7 @@ List<Meal> DUMMY_MEALS = [
     categories: ['c5', 'c8'],
     title: 'Teriyaki Chicken Stir-Fry',
     imageUrl:
-        'https://cdn.pixabay.com/photo/2017/03/29/15/18/chicken-2187502_960_720.jpg',
+        'https://img.taste.com.au/OSlNc3JS/taste/2016/11/teriyaki-chicken-stir-fry-16014-1.jpeg',
     ingridients: [
       'Chicken Breast',
       'Broccoli',
@@ -66,7 +66,7 @@ List<Meal> DUMMY_MEALS = [
     categories: ['c2', 'c10'],
     title: 'Butter Chicken',
     imageUrl:
-        'https://cdn.pixabay.com/photo/2019/11/05/06/01/butter-chicken-4609873_960_720.jpg',
+        'https://images.immediate.co.uk/production/volatile/sites/30/2021/02/butter-chicken-ac2ff98.jpg',
     ingridients: [
       'Chicken',
       'Tomatoes',
@@ -98,7 +98,7 @@ List<Meal> DUMMY_MEALS = [
     categories: ['c3', 'c4'],
     title: 'Classic Cheeseburger',
     imageUrl:
-        'https://cdn.pixabay.com/photo/2020/07/23/08/41/hamburger-5429547_960_720.jpg',
+        'https://leitesculinaria.com/wp-content/uploads/2013/01/classic-cheesburger-fp.jpg',
     ingridients: [
       'Ground Beef',
       'Buns',
@@ -131,7 +131,7 @@ List<Meal> DUMMY_MEALS = [
     categories: ['c2', 'c4'],
     title: 'Margherita Pizza',
     imageUrl:
-        'https://cdn.pixabay.com/photo/2017/03/27/20/56/pizza-2179717_960_720.jpg',
+        'https://www.foodandwine.com/thmb/3kzG4PWOAgZIIfZwMBLKqoTkaGQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/margherita-pizza-with-argula-and-prosciutto-FT-RECIPE0721-04368ec288a84d2e997573aca0001d98.jpg',
     ingridients: [
       'Pizza Dough',
       'Tomato Sauce',
@@ -161,7 +161,7 @@ List<Meal> DUMMY_MEALS = [
     categories: ['c2', 'c4'],
     title: 'Beef Tacos',
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/10/21/23/tacos-3529654_960_720.jpg',
+        'https://img.taste.com.au/Z2m_6zIt/taste/2016/11/beef-tacos-98153-1.jpeg',
     ingridients: [
       'Ground Beef',
       'Taco Shells',
@@ -197,7 +197,7 @@ List<Meal> DUMMY_MEALS = [
     categories: ['c5', 'c7'],
     title: 'Green Curry Chicken',
     imageUrl:
-        'https://cdn.pixabay.com/photo/2017/03/13/13/49/thai-food-2134618_960_720.jpg',
+        'https://www.thespruceeats.com/thmb/lRkFd-tG5HDOJQtwQHXM__6GjDw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/thai-green-curry-recipe-p3-3217442-hero-1-a3fcdfbc551849718c7750fa63ec8c6a.jpg',
     ingridients: [
       'Chicken Breast',
       'Green Curry Paste',
