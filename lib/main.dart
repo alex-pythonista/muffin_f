@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:muffin_f/screens/meal_detail_screen.dart';
 import 'screens/category_meals_screen.dart';
 
 import 'screens/categories_screen.dart';
@@ -27,6 +28,7 @@ class MuffinApp extends StatelessWidget {
       routes: {
         '/': (ctx) => CategoriesScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
+        MealsDetailScreen.routeName: (context) => MealsDetailScreen(),
       },
     );
   }
