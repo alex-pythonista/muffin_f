@@ -2,7 +2,232 @@ import 'package:flutter/material.dart';
 
 import './models/category.dart';
 
-const dummyCategories = [
+import './models/meal.dart';
+
+List<Meal> DUMMY_MEALS = [
+  Meal(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'Spaghetti with Tomato Sauce',
+    imageUrl:
+        'https://cdn.pixabay.com/photo/2018/07/11/21/51/spaghetti-3538457_960_720.jpg',
+    ingridients: ['Spaghetti', 'Tomatoes', 'Salt', 'Olive Oil'],
+    steps: [
+      'Boil water in a large pot and add salt.',
+      'Add spaghetti and cook for 8 to 10 minutes.',
+      'Drain the water and set aside the cooked spaghetti.',
+      'Heat olive oil in a pan and add tomatoes.',
+      'Add salt and cook for 5 minutes.',
+      'Add spaghetti to the pan and toss well.',
+      'Serve hot.'
+    ],
+    duration: 20,
+    complexity: Complexity.Simple,
+    affordanility: Affordanility.Affordability,
+    isGlutenFree: false,
+    isVegan: true,
+    isVegetarian: true,
+  ),
+  Meal(
+    id: 'm2',
+    categories: ['c5', 'c8'],
+    title: 'Teriyaki Chicken Stir-Fry',
+    imageUrl:
+        'https://cdn.pixabay.com/photo/2017/03/29/15/18/chicken-2187502_960_720.jpg',
+    ingridients: [
+      'Chicken Breast',
+      'Broccoli',
+      'Soy Sauce',
+      'Teriyaki Sauce',
+      'Garlic',
+      'Ginger',
+      'Cornstarch',
+      'Sesame Oil',
+    ],
+    steps: [
+      'Cut chicken breast into bite-sized pieces.',
+      'Mix soy sauce, teriyaki sauce, minced garlic, grated ginger, and cornstarch in a bowl.',
+      'Heat sesame oil in a pan and add chicken.',
+      'Cook until brown and remove from pan.',
+      'Add broccoli to the same pan and cook until tender.',
+      'Add the sauce mixture to the pan and cook until thickened.',
+      'Add chicken back to the pan and toss well.',
+      'Serve hot.'
+    ],
+    duration: 30,
+    complexity: Complexity.Challenging,
+    affordanility: Affordanility.Pricey,
+    isGlutenFree: false,
+    isVegan: false,
+    isVegetarian: false,
+  ),
+  Meal(
+    id: 'm3',
+    categories: ['c2', 'c10'],
+    title: 'Butter Chicken',
+    imageUrl:
+        'https://cdn.pixabay.com/photo/2019/11/05/06/01/butter-chicken-4609873_960_720.jpg',
+    ingridients: [
+      'Chicken',
+      'Tomatoes',
+      'Onion',
+      'Garlic',
+      'Ginger',
+      'Butter',
+      'Cream',
+      'Spices',
+    ],
+    steps: [
+      'Marinate chicken with spices and set aside for 30 minutes.',
+      'Heat butter in a pan and add onions, garlic, and ginger.',
+      'Cook until onions are translucent.',
+      'Add chicken to the pan and cook until brown.',
+      'Add tomatoes and cook until softened.',
+      'Add cream and cook for 5 minutes.',
+      'Serve hot with rice or naan.'
+    ],
+    duration: 45,
+    complexity: Complexity.Hard,
+    affordanility: Affordanility.Luxurious,
+    isGlutenFree: false,
+    isVegan: false,
+    isVegetarian: false,
+  ),
+  Meal(
+    id: 'm4',
+    categories: ['c3', 'c4'],
+    title: 'Classic Cheeseburger',
+    imageUrl:
+        'https://cdn.pixabay.com/photo/2020/07/23/08/41/hamburger-5429547_960_720.jpg',
+    ingridients: [
+      'Ground Beef',
+      'Buns',
+      'Cheese',
+      'Tomato',
+      'Lettuce',
+      'Onion',
+      'Ketchup',
+      'Mustard',
+      'Mayonnaise'
+    ],
+    steps: [
+      'Form ground beef into patties and season with salt and pepper.',
+      'Grill or cook the patties on a pan until fully cooked.',
+      'Toast buns and add cheese to the top of the cooked patties.',
+      'Add ketchup, mustard, and mayonnaise to the bottom bun.',
+      'Add lettuce, tomato, and onion to the top of the cheese.',
+      'Place the cooked patty on top of the vegetables.',
+      'Serve hot.'
+    ],
+    duration: 25,
+    complexity: Complexity.Simple,
+    affordanility: Affordanility.Affordability,
+    isGlutenFree: false,
+    isVegan: false,
+    isVegetarian: false,
+  ),
+  Meal(
+    id: 'm5',
+    categories: ['c2', 'c4'],
+    title: 'Margherita Pizza',
+    imageUrl:
+        'https://cdn.pixabay.com/photo/2017/03/27/20/56/pizza-2179717_960_720.jpg',
+    ingridients: [
+      'Pizza Dough',
+      'Tomato Sauce',
+      'Mozzarella Cheese',
+      'Basil',
+      'Olive Oil'
+    ],
+    steps: [
+      'Preheat oven to 450°F (230°C).',
+      'Roll out pizza dough and place on a baking sheet or pizza stone.',
+      'Spread tomato sauce on top of the pizza dough.',
+      'Add mozzarella cheese to the top of the tomato sauce.',
+      'Drizzle olive oil over the cheese.',
+      'Bake for 12-15 minutes or until the crust is golden brown.',
+      'Remove from the oven and top with fresh basil.',
+      'Serve hot.'
+    ],
+    duration: 30,
+    complexity: Complexity.Challenging,
+    affordanility: Affordanility.Affordability,
+    isGlutenFree: false,
+    isVegan: false,
+    isVegetarian: true,
+  ),
+  Meal(
+    id: 'm7',
+    categories: ['c2', 'c4'],
+    title: 'Beef Tacos',
+    imageUrl:
+        'https://cdn.pixabay.com/photo/2018/07/10/21/23/tacos-3529654_960_720.jpg',
+    ingridients: [
+      'Ground Beef',
+      'Taco Shells',
+      'Lettuce',
+      'Tomato',
+      'Cheese',
+      'Sour Cream',
+      'Taco Seasoning',
+      'Onion',
+      'Salsa'
+    ],
+    steps: [
+      'Cook ground beef in a pan over medium heat until browned.',
+      'Add taco seasoning to the beef and stir to combine.',
+      'Warm up taco shells according to package instructions.',
+      'Chop lettuce, tomato, and onion into small pieces.',
+      'Grate cheese.',
+      'Assemble the tacos by adding beef to the bottom of the taco shell.',
+      'Add lettuce, tomato, and onion on top of the beef.',
+      'Sprinkle cheese on top of the vegetables.',
+      'Add a dollop of sour cream and salsa on top of the cheese.',
+      'Serve hot.'
+    ],
+    duration: 20,
+    complexity: Complexity.Simple,
+    affordanility: Affordanility.Affordability,
+    isGlutenFree: false,
+    isVegan: false,
+    isVegetarian: false,
+  ),
+  Meal(
+    id: 'm8',
+    categories: ['c5', 'c7'],
+    title: 'Green Curry Chicken',
+    imageUrl:
+        'https://cdn.pixabay.com/photo/2017/03/13/13/49/thai-food-2134618_960_720.jpg',
+    ingridients: [
+      'Chicken Breast',
+      'Green Curry Paste',
+      'Coconut Milk',
+      'Bell Pepper',
+      'Onion',
+      'Fish Sauce',
+      'Brown Sugar',
+      'Basil'
+    ],
+    steps: [
+      'Heat a tablespoon of oil in a pan over medium heat.',
+      'Add green curry paste and stir for 1-2 minutes until fragrant.',
+      'Add chicken breast to the pan and cook until browned.',
+      'Add coconut milk, fish sauce, and brown sugar to the pan and stir to combine.',
+      'Add sliced bell pepper and onion to the pan.',
+      'Simmer for 10-15 minutes until the chicken is cooked through and the vegetables are tender.',
+      'Garnish with fresh basil.',
+      'Serve hot with rice.'
+    ],
+    duration: 35,
+    complexity: Complexity.Challenging,
+    affordanility: Affordanility.Pricey,
+    isGlutenFree: true,
+    isVegan: false,
+    isVegetarian: false,
+  ),
+];
+
+const List<Category> dummyCategories = [
   Category(
     id: 'c1',
     title: 'Italiano',
