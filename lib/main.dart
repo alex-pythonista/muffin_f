@@ -30,6 +30,11 @@ class MuffinApp extends StatelessWidget {
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealsDetailScreen.routeName: (context) => MealsDetailScreen(),
       },
+      // onGenerateRoute: (settings) {
+      //   print(settings.arguments);
+      //   return MaterialPageRoute(builder: (context) => CategoriesScreen());
+      // },
+      // onUnknownRoute: ,
     );
   }
 }
