@@ -35,7 +35,6 @@ class MuffinApp extends StatelessWidget {
       //   print(settings.arguments);
       //   return MaterialPageRoute(builder: (context) => CategoriesScreen());
       // },
-      // onUnknownRoute: ,
     );
   }
 }
