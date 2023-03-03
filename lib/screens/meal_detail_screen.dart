@@ -5,6 +5,7 @@ import 'package:muffin_f/data.dart';
 class MealsDetailScreen extends StatelessWidget {
   static const routeName = '/meal-detail';
 
+  // function to return a widget
   Widget buildSectionTitle(BuildContext context, String text) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 10),
